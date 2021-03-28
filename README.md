@@ -6,4 +6,6 @@ Git-flow is a plugin for git that allows for easy streamline workflows between b
 - If you are on a Linux system, you can do: `sudo apt-get update -y` and then `sudo apt-get install -y git-flow`
 
 Once you are done, initialize or clone a repository in which you want to use git-flow and then run the following commands:
-- `git flow init -d` to initialize git-flow with default branch names (__recommended__) or `git flow init` to initialize git-flow and choose your own branch names
+1. `git flow init -d` to initialize git-flow with default branch names (__recommended__) or `git flow init` to initialize git-flow and choose your own branch names
+
+After running the last command, use `git branch` to view all your branches and the branch you are currently on. If you are the first one of your team to do this, push the develop branch to Github with `git push origin develop`. On the other hand, if you are not the first one, you have to do _step 1_ and then track the develop branch with
