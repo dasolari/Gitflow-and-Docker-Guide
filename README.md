@@ -27,7 +27,8 @@ The idea behind this is that you __NEVER__ touch or do anything on the _main_ br
 
 And you are done :grin:. This would be the general workflow to follow on any team project. The other branches (__hotfix__, __release__ and __support__) work the same way as the _feature_ branch.
 
-Also, some more useful git commands:
+
+Also, here are some useful git commands:
 - `git checkout -- file-name` to revert the changes made to that branch
 - `git status` to see current changes
 - `git checkout branch-name`to switch between branches
