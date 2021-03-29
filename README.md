@@ -18,4 +18,4 @@ The idea behind this is that you __NEVER__ touch or do anything on the _main_ br
 
 5. Now you have two options:
 - You can work in your _feature_ branch and then run `git flow feature finish name-of-your-feature` when you are done. This last command will merge it locally with your _develop_ branch. Finally you would push these changes directly to _develop_ with `git push`. This whole step is NOT recommended so you should always try to avoid it (unless you are in a rush and doing a really small change that you're absolutely certain it will not fail).
-- You can work in your _feature_ branch and when you're done, run `git flow feature publish name-of-your-feature`. This will push your _feature_ branch to Github.
+- You can work in your _feature_ branch and when you're done, run `git flow feature publish name-of-your-feature`. This will push your _feature_ branch to Github and will automatically track it. From here you can leave it up there if you want to keep working another time or if you want to show it to someone, or you could open a __pull request__ to review the feature with your team and eventually merge it (this is the most recommended course of action).
