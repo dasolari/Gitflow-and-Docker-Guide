@@ -25,8 +25,15 @@ The idea behind this is that you __NEVER__ touch or do anything on the _main_ br
     - Create the pull request on Github, discuss it with your team and finally merge it in Github (__be sure to check__ that the _feature_ branch is merging into _develop_). Then once it's merged, locally you have to run `git flow feature finish name-of-your-feature` (it might ask you to commit your merge, write something if you want and the finish the merge writing `:wq`). You will be taken the your _develop_ branch, here you should do `git pull` in case any other changes were made in between.
     - Create the pull request on Github, discuss it with your team, then locally run `git flow feature finish name-of-your-feature` (it might also ask you to commit the merge). After this, you will be located in the _develop_ branch, here you have to run `git push` (might have to run `git pull` before) and the pull request will be automatically closed on Github.
 
-And you are done :grin:. This would be the general workflow to follow on any team project.
+And you are done :grin:. This would be the general workflow to follow on any team project. The other branches (__hotfix__, __release__ and __support__) work the same way as the _feature_ branch.
 
 Also, a couple of usefull git commands:
 - `git checkout -- file-name` to revert the changes made to that branch
 - `git status` to see current changes
+- `git checkout branch-name`to switch between branches
+- `git checkout -b branch-name` to create a new branch and switch to it
+- `git branch` to view all your branches
+- `git branch branch-name` to view all your branches
+- `git branch -d branch-name` to create a new branch
+- `git branch -D branch-name` to force delete a branch
+- `git merge branch-name`to merge the branch you are on, to the desired branch _branch-name_
