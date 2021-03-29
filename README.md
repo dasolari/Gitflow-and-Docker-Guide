@@ -34,6 +34,7 @@ Also, a couple of usefull git commands:
 - `git checkout -b branch-name` to create a new branch and switch to it
 - `git branch` to view all your branches
 - `git branch branch-name` to view all your branches
+- `git branch -u origin/branch-name` to track a remote branch from your current branch (name should be the same)
 - `git branch -d branch-name` to create a new branch
 - `git branch -D branch-name` to force delete a branch
 - `git merge branch-name`to merge the branch you are on, to the desired branch _branch-name_
