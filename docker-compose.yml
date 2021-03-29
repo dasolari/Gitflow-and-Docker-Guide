@@ -1,0 +1,45 @@
+version: '3'                         # latest version of docker-compose (recommended for volumes)
+
+services:
+  api:
+    build:                           # finds the dockerfile in the cwd to use that image (can also do build .)
+      context: .
+    container_name: node-app         # container name (optional)
+    restart: always                  # restart after change (optional)
+    volumes:                         # define volumes for this container
+      - /usr/src/app/node_modules
+      - ./:/usr/src/app
+    ports:                           # maps a local port with a container port
+      - "4000:4000"
+    command:                         # run command, in this case overwrites the one in the dockerfile
+      "npm run dev"
+    env_file:                        # adds enviroment variables given their location and file name
+      - ./.env
+    environment:                     # adds a specific enviroment variable(s) to the running container
+      - REDIS_URL=redis://cache
+
+  cache:                             # service name
+    image: redis                     # pulled image
+    container_name: redis-cache      # container name (optional)
+    expose:                          # exposed port on container
+      - 6379
+
+  first_database:                    # service name
+    image: mongo                     # image pulled from dockerhub
+    container_name: mongo-db         # container name (optional)
+    volumes:                         # define volumes (MOST IMPORTANT FOR DATABASES)
+      - mongoVolume:/data/db         # set data inside a local folder named mongoVolume with docker managed space (best practice)
+    depends_on:                      # waits for the specified service(s) to finish mounting
+      - api
+    logging:                         # sets the log type for the container
+      driver: json-file
+
+  second_database:
+    image: mongo
+    volumes:
+      - mongoVolume:/data/db         # able to share the same volume as first_database
+    depends_on:
+      - api
+
+volumes:                             # defines the volumes that we can bind between containers
+  mongoVolume:
