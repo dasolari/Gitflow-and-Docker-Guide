@@ -1,5 +1,5 @@
 ## Git Flow :fire::fire::fire:
-Git-flow is a plugin for git that allows for easy streamline workflows between big software teams. It consists on the creation of long lasting branches such as __main__ and __develop__ (mainly develop) for what wolud be the final versions of your code and also the creation of short lasting branches, such as __feature__, __hotfix__, __support__ and __release__ branches.
+Git-flow is a plugin for git that allows for easy streamline workflows in big software teams. It consists on the creation of long lasting branches such as __main__ and __develop__ (mainly develop) for what wolud be the final versions of your code and also the creation of short lasting branches, such as __feature__, __hotfix__, __support__ and __release__ branches.
 ### Installation :eyes:
 - If you are on a macOS system, you can use Homebrew:`brew install git-flow`
 - If you are on a Windows system, follow this video: [install git-flow](https://www.youtube.com/watch?v=XbyaIZKfyeg)
