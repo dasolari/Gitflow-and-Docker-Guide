@@ -1,10 +1,11 @@
-## Git-flow
+## Git Flow :fire::fire::fire:
 Git-flow is a plugin for git that allows for easy streamline workflows between big software teams. It consists on the creation of long lasting branches such as __main__ and __develop__ (mainly develop) for what wolud be the final versions of your code and also the creation of short lasting branches, such as __feature__, __hotfix__, __support__ and __release__ branches.
-### Installation
+### Installation :eyes:
 - If you are on a macOS system, you can use Homebrew:`brew install git-flow`
 - If you are on a Windows system, follow this video: [install git-flow](https://www.youtube.com/watch?v=XbyaIZKfyeg)
 - If you are on a Linux system, you can do: `sudo apt-get update -y` and then `sudo apt-get install -y git-flow`
 
+### Workflow :v:
 Once you are done, initialize or clone a repository in which you want to use git-flow and then run the following commands:
 1. `git flow init -d` to initialize git-flow with default branch names (__recommended__) or `git flow init` to initialize git-flow and choose your own branch names
 
@@ -25,3 +26,7 @@ The idea behind this is that you __NEVER__ touch or do anything on the _main_ br
     - Create the pull request on Github, discuss it with your team, then locally run `git flow feature finish name-of-your-feature` (it might also ask you to commit the merge). After this, you will be located in the _develop_ branch, here you have to run `git push` (might have to run `git pull` before) and the pull request will be automatically closed on Github.
 
 And you are done :grin:. This would be the general workflow to follow on any team project.
+
+Also, a couple of usefull git commands:
+- `git checkout -- file-name` to revert the changes made to that branch
+- `git status` to see current changes
