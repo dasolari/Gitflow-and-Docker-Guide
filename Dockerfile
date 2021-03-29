@@ -1,9 +1,9 @@
-# A dockerfile will build an image given every that you write. In
-# order to keep thing efficient, it will cache each instruction as
-# a layer in case nothing changed, so the order in which you give
-# these isntructions is important.
+# A dockerfile will build an image given every instruction that you
+# write. In order to keep things efficient, it will cache each 
+# instruction as a layer in case nothing changed, so the order in
+# which you give these instructions is important.
 
-# This example shows the dockerization of a node app
+# This example shows the dockerization of a node app.
 
 # This installs the enviroment where you will be running your app.
 # It's recommended that you use a fixed version to avoid breaking
@@ -17,7 +17,7 @@ WORKDIR /usr/src/app
 RUN apt-get update
 
 # These would be the dependencies of your app, so you want to add
-# them as a more external layer to avoid re-writing then every time
+# them as a more external layer to avoid re-writing them every time
 # you make a small change in your app. 
 # The first argument is what you want to copy, the second argument
 # is where you want to copy it (in this case is the cwd).
@@ -44,22 +44,28 @@ ENV PORT=3000 POSTGRES_DB=db_name
 # in this file.
 EXPOSE 3000
 
-# There can only be one of these per dockerfile and it tells the
+# There can only be one of these per Dockerfile and it tells the
 # container how to run the application. It's an exec form.
 CMD [ "npm", "run", "start" ]
 
 
-# To run a container, write:
+# To run a container:
 
-# docker build -t image_name .
+# (1) docker build -t image_name .
 # This defines a tag (-t) with a custom name (image_name) and the location of the dockerfile (this cwd).
 
-# docker run -p local_port:exposed_container_port image_name_or_id
+# (2) docker run -p local_port:exposed_container_port image_name_or_id
 # This runs the container, specifying the local port and the port exposed in the container.
 
-# docker volume create files-volume
-# docker run --mount source=files-volume,target=/file_to_persist
+
+# To create a volume
+
+# (1) docker volume create files-volume
+# (2) docker run --mount source=files-volume,target=/file_to_persist
 # This creates and mounts a volume to persist any files you want.
 
-# docker container_name_or_id exec
+
+# To debugg a container
+
+# (1) docker container_name_or_id exec
 # This runs a terminal session inside the container.
