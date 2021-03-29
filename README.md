@@ -37,3 +37,8 @@ Also, a couple of usefull git commands:
 - `git branch -d branch-name` to create a new branch
 - `git branch -D branch-name` to force delete a branch
 - `git merge branch-name`to merge the branch you are on, to the desired branch _branch-name_
+
+
+## Docker and docker-compose :whale::whale::whale:
+The docker and docker-compose tutorials are located in the respective folders. The example uses a node app
+and I recommend that you start with the `dockerfile` and then go to the `docker-compose` file.
