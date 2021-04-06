@@ -7,9 +7,9 @@ Git-flow is a plugin for git that allows for easy streamline workflows in big so
 
 ### Workflow :v:
 Once you are done, initialize or clone a repository in which you want to use git-flow and then run the following commands:
-1. `git flow init -d` to initialize git-flow with default branch names (__recommended__) or `git flow init` to initialize git-flow and choose your own branch names
+1. `git flow init -d` to initialize git-flow with default branch names (__recommended__) or `git flow init` to initialize git-flow and choose your own branch names.
 
-2. After running the last command, use `git branch` to view all your branches and the branch you are currently on. If you are the first one of your team to do this, push the _develop_ branch to Github with `git push origin develop` and then track it with `git branch -u origin/develop`. On the other hand, if you are not the first one, you have to do _step 1_ and then track the _develop_ branch with the same command as before given that you ARE on your _develop_ branch (Tip: You can track other branches too).
+2. After running the last command, use `git branch` to view all your branches and the branch you are currently on. If you are the first one of your team to do this, push the _develop_ branch to Github with `git push origin develop` and then track it with `git branch -u origin/develop`. On the other hand, if you are not the first one, you have to do _step 1_ and then track the _develop_ branch with the same command as before, given that you ARE on your _develop_ branch (Tip: You can track other branches too).
 
 The idea behind this is that you __NEVER__ touch or do anything on the _main_ branch and that you create feature branches from the _develop_ branch. Now that you are all set, you can start working with _feature_ branches.
 
