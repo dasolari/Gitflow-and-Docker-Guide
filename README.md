@@ -37,7 +37,7 @@ And you are done :grin:. This would be the general workflow to follow on any tea
 Also, here are some useful git commands:
 - `git checkout -- file-name` to revert the changes made to that branch
 - `git status` to see current changes
-- `git checkout branch-name`to switch between branches
+- `git checkout branch-name` to switch between branches
 - `git checkout -b branch-name` to create a new branch and switch to it
 - `git branch` to view all your branches
 - `git branch branch-name` to view all your branches
