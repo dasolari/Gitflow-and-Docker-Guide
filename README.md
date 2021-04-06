@@ -2,7 +2,7 @@
 Git-flow is a plugin for git that allows for easy streamline workflows in big software teams. It consists on the creation of long lasting branches such as __main__ and __develop__ (mainly develop) for what wolud be the final versions of your code and also the creation of short lasting branches, such as __feature__, __hotfix__, __support__ and __release__ branches.
 
 ### Video :octopus:
-[Tutorial Git Flow](https://drive.google.com/file/d/1nidqjL6f7EpfMSBy9vn11q9r8RLhboXs/view?usp=sharing)
+[Git Flow tutorial](https://drive.google.com/file/d/1nidqjL6f7EpfMSBy9vn11q9r8RLhboXs/view?usp=sharing)
 
 For the record, there are other ways of using git flow that I didn't mention in this video. This is the way I prefer to do it, but the most common ways of doing it are mentioned below.
 
