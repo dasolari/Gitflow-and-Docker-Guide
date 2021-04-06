@@ -4,6 +4,8 @@ Git-flow is a plugin for git that allows for easy streamline workflows in big so
 ### Video :octopus:
 [Tutorial Git Flow](https://drive.google.com/file/d/1nidqjL6f7EpfMSBy9vn11q9r8RLhboXs/view?usp=sharing)
 
+For the record, there are other ways of using git flow that I didn't mention in this video. This is the way I prefer to do it, but the most common ways of doing it are mentioned below.
+
 ### Installation :eyes:
 - If you are on a macOS system, you can use Homebrew:`brew install git-flow`
 - If you are on a Windows system, follow this video: [install git-flow](https://www.youtube.com/watch?v=XbyaIZKfyeg)
