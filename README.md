@@ -43,4 +43,4 @@ Also, here are some useful git commands:
 
 ## Docker and docker-compose :whale: :whale: :whale:
 The docker and docker-compose tutorials are located in the respective folders. The example uses a node app
-and I recommend that you start with the `dockerfile` and then go to the `docker-compose` file. Don`t forget to add a .dockerignore file.
+and I recommend that you start with the `dockerfile` and then go to the `docker-compose` file. Don't forget to add a .dockerignore file to ignore your node_modules.
